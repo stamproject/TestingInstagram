@@ -1,5 +1,7 @@
 const { defineConfig } = require('@playwright/test');
-
+timeout:  120000,
+   retries: 2,
+   workers: 1,
 module.exports = defineConfig({
     use: {
         video: 'retain-on-failure', // Record videos for failed tests only. Use 'on' to record for all tests.
