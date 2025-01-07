@@ -7,8 +7,8 @@ class LoginPage {
     }
 
     async logInToApp() {
-        await this.page.fill(this.username, 'lejlahodzic2211');
-        await this.page.fill(this.password, 'NekiPassword12');
+        await this.page.fill(this.username, 'osmicilma');
+        await this.page.fill(this.password, 'NekiPassword123');
         await this.page.click(this.loginButton);
     }
 }
